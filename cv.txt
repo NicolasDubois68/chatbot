@@ -1,5 +1,5 @@
 ---
-Dernières expérience professionnelle
+Dernière expérience professionnelle
 Consultant Data – Abylsen
 Depuis juin 2024, Metz – CDI, mission chez eMotors
 - Analyse des besoins métiers dans les achats, finances, production, qualité et supply chain.
@@ -9,7 +9,6 @@ Depuis juin 2024, Metz – CDI, mission chez eMotors
 - Automatisation des workflows ETL via planification batch sur machine virtuelle ou Databricks Jobs, avec versioning sur Bitbucket.
 - Création et maintenance de tableaux de bord Power BI pour l’aide à la décision et le pilotage opérationnel.
 - Gestion de projets data, rédaction de documentation technique et guides utilisateurs.
-- Migration vers une infrastructure moderne (Databricks, Azure) en collaboration avec l’équipe interne et un prestataire externe.
 Compétences clés : Python, SQL, Spark (Databricks), Power BI, Azure, AWS S3, Bitbucket, VSCode, SharePoint, OPC UA, PostgreSQL, Datalake ERP.
 
 ---
@@ -43,23 +42,31 @@ Projet SITG (tunnels de Lyon) : recherche de règles d’associations entre alar
 - Développement d’une interface interactive avec Voila pour des démonstrations dynamiques en direct.
 
 Compétences clés : Python, SQL, Dash, Plotly, Voila, PostgreSQL.
+Compétences techniques complémentaires : Linux, Docker, Jupyter Notebook.
 
 ---
 
-Formation
+Formation, étude
 
 Master – Ingénierie Mathématique et Data Science
 Université de Haute-Alsace, 2019 – 2022
 Compétences : Python, SQL, Java, C++, R, JavaScript, Pandas, statistiques, modèles de régression, traitement du signal et de l’image, Jupyter Notebook.
 
 ---
-
+Formation, étude
 Licence – Informatique, parcours Mathématiques
 Université de Haute-Alsace, 2017 – 2019
 Mention assez bien.
 
 ---
-
+Formation, étude
 Classe Préparatoire aux Grandes Écoles – MPSI / MP*
 Lycée Albert Schweitzer, Mulhouse, 2015 – 2017
-Compétences techniques complémentaires : Linux, Docker, Jupyter Notebook.
+
+---
+centre d'intérêt, loisir,
+Musique : composition assisté par ordinateur sur le logiciel Fl studio, sound design, mixage
+Chaine youtube ou je poste mes compositions depuis 5 ans. 
+
+---
+Michel, c'est le brésil ! Il danse la samba, il va de ville en ville pour vendre des fenêtres ! 

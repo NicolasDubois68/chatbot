@@ -1,20 +1,19 @@
 from flask import Flask, render_template, request, jsonify
-from sentence_transformers import SentenceTransformer, util
+from sentence_transformers import SentenceTransformer
+import torch
 
 app = Flask(__name__)
 
-# Charger les données du CV séparées par '---'
+# Charger et découper le fichier CV en blocs
 with open("cv.txt", "r", encoding="utf-8") as f:
     raw_text = f.read()
 
-# Séparer le texte en blocs par '---' et nettoyer
-corpus = [block.strip() for block in raw_text.split('---') if block.strip()]
+# Séparer les blocs entre les délimiteurs ---
+blocks = [block.strip() for block in raw_text.split('---') if block.strip()]
 
-# Charger le modèle SentenceTransformer
+# Préparer les embeddings pour tous les blocs
 model = SentenceTransformer("all-MiniLM-L6-v2")
-
-# Encoder tous les blocs du corpus en tenseurs (pour fallback)
-corpus_embeddings = model.encode(corpus, convert_to_tensor=True)
+block_embeddings = model.encode(blocks, convert_to_tensor=True)
 
 @app.route("/")
 def index():
@@ -22,32 +21,24 @@ def index():
 
 @app.route("/ask", methods=["POST"])
 def ask():
-    data = request.json
-    question = data.get("question", "").strip()
-    if not question:
-        return jsonify({"answer": "Merci de poser une question."})
+    data = request.get_json()
+    question = data.get("question", "")
+    question_lower = question.lower()
 
-    # Extraire mots clés simples (split par espaces, en minuscules)
-    keywords = question.lower().split()
-
-    # Chercher tous les blocs qui contiennent au moins un mot clé
+    # Recherche des blocs contenant des mots présents dans la question
     matching_blocks = []
-    for block in corpus:
-        block_lower = block.lower()
-        if any(kw in block_lower for kw in keywords):
+    for block in blocks:
+        if any(word in block.lower() for word in question_lower.split()):
             matching_blocks.append(block)
 
     if matching_blocks:
-        # Concaténer tous les blocs trouvés, séparés par '---'
-        answer = "\n\n---\n\n".join(matching_blocks)
+        return jsonify({"answer": "\n\n---\n\n".join(matching_blocks)})
     else:
-        # Aucun bloc ne correspond, fallback : recherche sémantique la plus proche
+        # Si aucun mot-clé trouvé, on fait un matching sémantique (fallback)
         question_embedding = model.encode(question, convert_to_tensor=True)
-        hits = util.semantic_search(question_embedding, corpus_embeddings, top_k=1)
-        best_block_idx = hits[0][0]['corpus_id']
-        answer = corpus[best_block_idx]
-
-    return jsonify({"answer": answer})
+        cos_scores = torch.nn.functional.cosine_similarity(question_embedding, block_embeddings)
+        best_idx = torch.argmax(cos_scores).item()
+        return jsonify({"answer": blocks[best_idx]})
 
 if __name__ == "__main__":
     app.run(debug=True)

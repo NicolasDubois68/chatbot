@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Chatbot</title>
-    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/style.css" />
 </head>
 <body>
     <canvas id="matrixCanvas"></canvas>
 
     <div class="chat-container">
-        <h1>Chatbot</h1>
+        <h1>Bonjour, je suis Michel ! Vous voulez discuter du parcours de Nicolas ?</h1>
         <textarea id="question" placeholder="Pose une question..."></textarea>
         <button onclick="askQuestion()">Envoyer</button>
         <div id="response"></div>
@@ -60,6 +60,87 @@
         }
 
         setInterval(draw, 33);
+
+        // Mini terminals effet tapé une lettre à la fois, en vert sur fond noir
+        const terminalsCount = 5;
+        const terminalTexts = [
+            "user@machine:~$ ls -l\nDesktop  Documents  Downloads  Music  Pictures  Videos",
+            "root@server:~# systemctl status nginx\n● nginx.service - A high performance web server\n   Loaded: loaded (/lib/systemd/system/nginx.service; enabled)\n   Active: active (running)",
+            "guest@pc:~$ ping google.com\nPING google.com (142.250.190.14): 56 data bytes\n64 bytes from 142.250.190.14: icmp_seq=0 ttl=115 time=10.1 ms",
+            "admin@db:~$ tail -n 10 /var/log/syslog\nMay 24 10:01:01 db CRON[1234]: (root) CMD (backup.sh)\nMay 24 10:02:02 db sshd[5678]: Accepted password for admin",
+            "alice@workstation:~$ git status\nOn branch main\nYour branch is up to date with 'origin/main'.\nnothing to commit, working tree clean"
+        ];
+
+        function createMiniTerminal(text) {
+            const term = document.createElement('div');
+            term.classList.add('mini-terminal');
+
+            // window bar with 3 buttons
+            const bar = document.createElement('div');
+            bar.classList.add('window-bar');
+
+            ['close', 'minimize', 'maximize'].forEach(() => {
+                const btn = document.createElement('div');
+                btn.classList.add('window-btn');
+                bar.appendChild(btn);
+            });
+
+            term.appendChild(bar);
+
+            const content = document.createElement('pre');
+            term.appendChild(content);
+
+            document.body.appendChild(term);
+
+            // Position terminal randomly outside central chat area (which is 60% width centered)
+            const margin = 50;
+            const chatLeft = window.innerWidth * 0.2;
+            const chatRight = window.innerWidth * 0.8;
+            const chatTop = window.innerHeight * 0.05;
+            const chatBottom = window.innerHeight * 0.95;
+
+            let left;
+            do {
+                left = Math.random() * (window.innerWidth - 220);
+            } while (left > chatLeft && left < chatRight);
+
+            let top = Math.random() * (window.innerHeight - 120);
+
+            term.style.left = left + 'px';
+            term.style.top = top + 'px';
+
+            // Effet "tape à la lettre"
+            let i = 0;
+            function type() {
+                if (i <= text.length) {
+                    content.textContent = text.substring(0, i);
+                    i++;
+                    setTimeout(type, 50);
+                } else {
+                    setTimeout(() => {
+                        term.remove();
+                    }, 3000);
+                }
+            }
+            type();
+        }
+
+        // Lancer les mini-terminaux à intervalle aléatoire
+        function launchTerminals() {
+            for (let i = 0; i < terminalsCount; i++) {
+                setTimeout(() => {
+                    createMiniTerminal(terminalTexts[i]);
+                }, i * 1500 + Math.random() * 2000);
+            }
+        }
+
+        launchTerminals();
+
+        // Optionnel : relancer régulièrement
+        setInterval(() => {
+            launchTerminals();
+        }, 20000);
+
     </script>
 </body>
 </html>
