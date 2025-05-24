@@ -1,72 +1,50 @@
----
-Dernière expérience professionnelle
-Consultant Data – Abylsen
-Depuis juin 2024, Metz – CDI, mission chez eMotors
-- Analyse des besoins métiers dans les achats, finances, production, qualité et supply chain.
-- Collecte de données d'automates industriels via le protocole OPC UA.
-- Développement et déploiement d’ETL en Python, SQL et Spark (Databricks) à partir de sources multiples.
-- Modélisation des données selon l’architecture en médaillon (Bronze, Silver, Gold) sur Databricks.
-- Automatisation des workflows ETL via planification batch sur machine virtuelle ou Databricks Jobs, avec versioning sur Bitbucket.
-- Création et maintenance de tableaux de bord Power BI pour l’aide à la décision et le pilotage opérationnel.
-- Gestion de projets data, rédaction de documentation technique et guides utilisateurs.
-Compétences clés : Python, SQL, Spark (Databricks), Power BI, Azure, AWS S3, Bitbucket, VSCode, SharePoint, OPC UA, PostgreSQL, Datalake ERP.
+Je suis consultant Data chez Abylsen depuis juin 2024 à Metz.  
+Je travaille en CDI et je suis en mission chez eMotors.  
+J’analyse les besoins métiers dans plusieurs domaines : achats, finances, production, qualité et supply chain.  
+Je collecte des données provenant d'automates industriels avec le protocole OPC UA.  
+Je développe des ETL en Python, SQL et Spark, notamment sur Databricks.  
+Je modélise les données avec une architecture en médaillon : Bronze, Silver et Gold.  
+J’automatise les workflows ETL avec des planifications batch sur des machines virtuelles ou via Databricks Jobs.  
+Je gère le versioning de mes projets sur Bitbucket.  
+Je crée et maintiens des tableaux de bord Power BI pour aider à la décision.  
+Je rédige aussi la documentation technique et des guides utilisateurs.  
+Mes compétences incluent Python, SQL, Spark, Power BI, Azure, AWS S3, Bitbucket, VSCode, SharePoint, OPC UA, PostgreSQL et Datalake ERP.
 
----
+Avant cela, j’ai été Data Engineer et Ingénieur Logiciel chez CGI entre janvier 2023 et juin 2024 à Montbéliard.  
+J’ai travaillé sur un projet Data Engineering pour produire des KPI QHSE.  
+J’ai développé des connecteurs vers de nouvelles sources de données.  
+J’ai nettoyé, enrichi et traité des données.  
+J’ai créé des indicateurs, des dashboards et tous les livrables nécessaires.  
+J’ai aussi rédigé la documentation fonctionnelle et technique.  
+Sur un autre projet, j’ai développé une application web pour l’analyse de données.  
+J’ai construit une interface interactive dans Jupyter Notebook pour intégrer du code nCodeDS dans PySpark.  
+J’ai développé un plugin PySpark pour automatiser l’extraction de données complexes.  
+Mes outils de travail comprenaient GCP (BigQuery, Cloud Function, Pub/Sub, Cloud Storage, Scheduler, Git Repository), Python, SQL, Shell, HTML, CSS, JavaScript, Git, API REST, CI/CD, Looker Studio, Dataiku DSS et Jupyter Notebook.
 
-Expérience professionnelle
-Data Engineer / Ingénieur Logiciel – CGI
-Janvier 2023 – juin 2024, Montbéliard – CDI
+J’ai fait un stage de Data Scientist chez Clemessy de mars 2022 à août 2022 à Mulhouse.  
+J’ai travaillé sur un projet appelé SITG qui portait sur les tunnels de Lyon.  
+J’ai recherché des règles d’association entre alarmes d’équipements.  
+J’ai développé une application Dash/Plotly pour présenter le projet et suivre son avancement.  
+J’ai traité les données d’alarme provenant d’une base PostgreSQL pour l’algorithme Apriori.  
+J’ai mis en place une stratégie de filtrage basée sur l’analyse de graphes et la décomposition par composants.  
+J’ai créé une interface interactive avec Voila pour des démonstrations en direct.  
+Mes compétences durant ce stage incluaient Python, SQL, Dash, Plotly, Voila et PostgreSQL.  
+J’ai aussi des connaissances en Linux, Docker et Jupyter Notebook.
 
-Client 2 – Projet Data Engineering : Production de KPI QHSE
-- Développement de connecteurs vers une nouvelle source de données.
-- Nettoyage, enrichissement et traitement des données.
-- Création de KPI, indicateurs, dashboards et livrables associés.
-- Rédaction de documentation fonctionnelle et technique.
+Je suis titulaire d’un master en Ingénierie Mathématique et Data Science obtenu à l’Université de Haute-Alsace entre 2019 et 2022.  
+Durant ce master, j’ai appris Python, SQL, Java, C++, R, JavaScript, Pandas, statistiques, modèles de régression, traitement du signal et de l’image.  
+J’ai aussi utilisé Jupyter Notebook pour mes projets.
 
-Client 1 – Ingénierie Logicielle & Dataiku DSS
-- Développement et évolution d’une application web pour l’analyse de données.
-- Création d’une interface interactive dans Jupyter Notebook pour intégrer du code nCodeDS dans une recette PySpark.
-- Développement d’un plugin PySpark pour automatiser l’extraction de données complexes.
+Avant cela, j’ai une licence en Informatique, parcours Mathématiques, obtenue à l’Université de Haute-Alsace entre 2017 et 2019.  
+J’ai eu la mention assez bien.
 
-Compétences clés : Environnement GCP (BigQuery, Cloud Function, Pub/Sub, Cloud Storage, Scheduler, Git Repository), Python (Pandas, PySpark), SQL, Shell, HTML/CSS/JS, Git, API REST, CI/CD, Looker Studio, Dataiku DSS, Jupyter Notebook.
+J’ai suivi une classe préparatoire aux grandes écoles, en MPSI puis MP*, au lycée Albert Schweitzer à Mulhouse, de 2015 à 2017.
 
----
+Dans mes loisirs, je compose de la musique assistée par ordinateur avec le logiciel FL Studio.  
+Je fais aussi du sound design et du mixage.  
+J’ai une chaîne YouTube où je poste mes compositions depuis cinq ans.
 
-Data Scientist – Clemessy
-Mars 2022 – août 2022, Mulhouse – Stage
-
-Projet SITG (tunnels de Lyon) : recherche de règles d’associations entre alarmes d’équipements.
-- Développement d’une application Dash/Plotly pour présenter le projet et suivre l’avancement.
-- Traitement et préparation des données d’alarme issues d’une base PostgreSQL pour l’algorithme Apriori.
-- Mise en œuvre d’une stratégie de filtrage basée sur l’analyse de graphes et décomposition par composants.
-- Développement d’une interface interactive avec Voila pour des démonstrations dynamiques en direct.
-
-Compétences clés : Python, SQL, Dash, Plotly, Voila, PostgreSQL.
-Compétences techniques complémentaires : Linux, Docker, Jupyter Notebook.
-
----
-
-Formation, étude
-
-Master – Ingénierie Mathématique et Data Science
-Université de Haute-Alsace, 2019 – 2022
-Compétences : Python, SQL, Java, C++, R, JavaScript, Pandas, statistiques, modèles de régression, traitement du signal et de l’image, Jupyter Notebook.
-
----
-Formation, étude
-Licence – Informatique, parcours Mathématiques
-Université de Haute-Alsace, 2017 – 2019
-Mention assez bien.
-
----
-Formation, étude
-Classe Préparatoire aux Grandes Écoles – MPSI / MP*
-Lycée Albert Schweitzer, Mulhouse, 2015 – 2017
-
----
-centre d'intérêt, loisir,
-Musique : composition assisté par ordinateur sur le logiciel Fl studio, sound design, mixage
-Chaine youtube ou je poste mes compositions depuis 5 ans. 
-
----
-Michel, c'est le brésil ! Il danse la samba, il va de ville en ville pour vendre des fenêtres ! 
+Michel, c’est moi.  
+Je viens du Brésil.  
+J’adore danser la samba.  
+Je voyage de ville en ville pour vendre des fenêtres.

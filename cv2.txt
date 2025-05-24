@@ -1,0 +1,12 @@
+Il est consultant Data chez Abylsen depuis juin 2024.  
+Il travaille à Metz en CDI.  
+Il réalise des missions chez eMotors.  
+Il analyse les besoins métiers dans les achats, la finance, la production, la qualité et la supply chain.  
+Il collecte des données d’automates industriels avec le protocole OPC UA.  
+Il développe et déploie des ETL en Python, SQL et Spark.  
+Il utilise Databricks pour modéliser les données avec une architecture en médaillon.  
+Il automatise les workflows ETL en planifiant des batchs sur machines virtuelles ou Databricks Jobs.  
+Il gère le versioning avec Bitbucket.  
+Il crée et maintient des tableaux de bord Power BI pour fournir des indicateurs pertinents. 
+Il rédige la documentation technique et des guides utilisateurs.  
+Ses compétences incluent Python, SQL, Spark, Power BI, Azure, AWS S3, Bitbucket, VSCode, SharePoint, OPC UA, PostgreSQL et Datalake ERP.
