@@ -1,0 +1,69 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background: black;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    color: #0f0;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.chat-container {
+    position: relative;
+    z-index: 1;
+    width: 60%;
+    margin: 5% auto;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 30px;
+    border: 2px solid #0f0;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #0f0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    background: black;
+    color: #0f0;
+    border: 1px solid #0f0;
+    padding: 10px;
+    font-size: 16px;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 100%;
+    background-color: #0f0;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#response {
+    margin-top: 20px;
+    background: black;
+    padding: 15px;
+    border: 1px solid #0f0;
+    font-size: 16px;
+    white-space: pre-wrap;
+    height: 300px;          /* fixe la hauteur */
+    overflow-y: auto;       /* active le scroll vertical */
+}
+

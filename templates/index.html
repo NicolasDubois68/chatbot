@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <canvas id="matrixCanvas"></canvas>
+
+    <div class="chat-container">
+        <h1>Chatbot</h1>
+        <textarea id="question" placeholder="Pose une question..."></textarea>
+        <button onclick="askQuestion()">Envoyer</button>
+        <div id="response"></div>
+    </div>
+
+    <script>
+        function askQuestion() {
+            const question = document.getElementById("question").value;
+            fetch("/ask", {
+                method: "POST",
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({question})
+            })
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById("response").innerText = data.answer;
+            });
+        }
+
+        // EFFET MATRIX
+        const canvas = document.getElementById("matrixCanvas");
+        const ctx = canvas.getContext("2d");
+
+        canvas.height = window.innerHeight;
+        canvas.width = window.innerWidth;
+
+        const letters = "ΔΘΛΩΨΣΞΦΧЖѪѬҘѲҖ⟁⧫⚛⚝⚡⊕☥☯☢⚚★◇◆Ω∑∇";
+        const fontSize = 16;
+        const columns = canvas.width / fontSize;
+        const drops = Array(Math.floor(columns)).fill(1);
+
+        function draw() {
+            ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.fillStyle = "#0F0";
+            ctx.font = fontSize + "px monospace";
+
+            for (let i = 0; i < drops.length; i++) {
+                const text = letters[Math.floor(Math.random() * letters.length)];
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+                if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+                drops[i]++;
+            }
+        }
+
+        setInterval(draw, 33);
+    </script>
+</body>
+</html>
