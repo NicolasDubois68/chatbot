@@ -1,27 +1,28 @@
 from flask import Flask, render_template, request, jsonify
-from sentence_transformers import SentenceTransformer
 import torch
-import re
+from minigpt import GPT, Tokenizer
+
+import json
 
 app = Flask(__name__)
 
-def simple_sent_tokenize(text):
-    # Sépare sur ., !, ? suivis d'un espace ou fin de texte
-    sentences = re.split(r'(?<=[.!?])\s+', text)
-    sentences = [s.strip() for s in sentences if s.strip()]
-    return sentences
+# Recharger tokenizer
+with open("minigpt_tokenizer.json", "r", encoding="utf-8") as f:
+    stoi = json.load(f)
+    itos = {i: ch for ch, i in stoi.items()}
 
-# Charger et découper le fichier CV en phrases
-with open("cv2.txt", "r", encoding="utf-8") as f:
-    raw_text = f.read()
+tokenizer = Tokenizer("")
+tokenizer.stoi = stoi
+tokenizer.itos = itos
+tokenizer.vocab = list(stoi.keys())
+tokenizer.vocab_size = len(tokenizer.vocab)
 
-sentences = simple_sent_tokenize(raw_text)
-
-# Charger le modèle de SentenceTransformer
-model = SentenceTransformer("all-MiniLM-L6-v2")
-
-# Calculer les embeddings pour chaque phrase
-sentence_embeddings = model.encode(sentences, convert_to_tensor=True)
+# Charger modèle
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
+model = GPT(tokenizer.vocab_size)
+model.load_state_dict(torch.load("minigpt_cv2.pth", map_location=device))
+model.to(device)
+model.eval()
 
 @app.route("/")
 def index():
@@ -31,18 +32,12 @@ def index():
 def ask():
     data = request.get_json()
     question = data.get("question", "")
-    
-    # Encoder la question
-    question_embedding = model.encode(question, convert_to_tensor=True)
-    
-    # Calculer la similarité cosinus entre la question et chaque phrase du CV
-    cos_scores = torch.nn.functional.cosine_similarity(question_embedding, sentence_embeddings)
-    
-    # Trouver l'indice de la phrase la plus proche
-    top_idx = torch.argmax(cos_scores).item()
-    
-    # Renvoyer la phrase la plus pertinente
-    answer = sentences[top_idx]
+    prompt = f"Question: {question}\nRéponse:"
+    idx = torch.tensor([tokenizer.encode(prompt)], dtype=torch.long).to(device)
+    with torch.no_grad():
+        out = model.generate(idx, max_new_tokens=100)
+    result = tokenizer.decode(out[0].tolist())
+    answer = result.split("Réponse:")[-1].strip()
     return jsonify({"answer": answer})
 
 if __name__ == "__main__":

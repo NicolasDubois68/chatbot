@@ -48,3 +48,97 @@ Michel, c’est moi.
 Je viens du Brésil.  
 J’adore danser la samba.  
 Je voyage de ville en ville pour vendre des fenêtres.
+
+Question: Où travailles-tu actuellement ?
+Réponse: Je suis consultant Data chez Abylsen depuis juin 2024.
+
+Question: Dans quelle ville travailles-tu ?
+Réponse: Je travaille à Metz.
+
+Question: Quel est ton type de contrat ?
+Réponse: Je suis en CDI.
+
+Question: Chez quel client es-tu en mission ?
+Réponse: Je suis en mission chez eMotors.
+
+Question: Quels domaines métiers analyses-tu ?
+Réponse: J’analyse les besoins métiers en achats, finances, production, qualité et supply chain.
+
+Question: Comment collectes-tu les données industrielles ?
+Réponse: Je collecte des données d'automates via le protocole OPC UA.
+
+Question: Quels langages utilises-tu pour les ETL ?
+Réponse: J’utilise Python, SQL et Spark pour développer les ETL.
+
+Question: Sur quelle plateforme travailles-tu avec Spark ?
+Réponse: Je travaille principalement sur Databricks.
+
+Question: Quelle architecture utilises-tu pour les données ?
+Réponse: Je modélise les données selon une architecture en médaillon : Bronze, Silver, Gold.
+
+Question: Comment automatises-tu les workflows ?
+Réponse: J’automatise les workflows ETL avec des batchs sur machines virtuelles ou via Databricks Jobs.
+
+Question: Quel outil utilises-tu pour le versioning ?
+Réponse: J’utilise Bitbucket pour le versioning des projets.
+
+Question: Que fais-tu avec Power BI ?
+Réponse: Je crée et maintiens des tableaux de bord Power BI.
+
+Question: À quoi servent tes dashboards ?
+Réponse: Ils aident à la prise de décision.
+
+Question: Est-ce que tu rédiges de la documentation ?
+Réponse: Oui, je rédige la documentation technique et des guides utilisateurs.
+
+Question: Quelles sont tes compétences techniques principales ?
+Réponse: Python, SQL, Spark, Power BI, Azure, AWS S3, Bitbucket, SharePoint, OPC UA, PostgreSQL, Datalake ERP.
+
+Question: Où as-tu travaillé avant Abylsen ?
+Réponse: J’ai travaillé chez CGI entre janvier 2023 et juin 2024.
+
+Question: Quels rôles avais-tu chez CGI ?
+Réponse: J’étais Data Engineer et Ingénieur Logiciel.
+
+Question: Où étais-tu basé chez CGI ?
+Réponse: Je travaillais à Montbéliard.
+
+Question: Quel était ton projet principal chez CGI ?
+Réponse: Un projet Data Engineering pour produire des KPI QHSE.
+
+Question: Qu’as-tu développé pendant ce projet ?
+Réponse: J’ai développé des connecteurs, nettoyé et enrichi des données, créé des indicateurs et des dashboards.
+
+Question: As-tu travaillé sur une application web chez CGI ?
+Réponse: Oui, j’ai développé une application d’analyse de données avec Jupyter Notebook et PySpark.
+
+Question: As-tu utilisé Google Cloud Platform ?
+Réponse: Oui, avec BigQuery, Cloud Function, Pub/Sub, Cloud Storage et Scheduler.
+
+Question: Où as-tu fait ton stage de fin d’études ?
+Réponse: Chez Clemessy, à Mulhouse, en 2022.
+
+Question: Quel était le projet de ton stage ?
+Réponse: Un projet appelé SITG sur les tunnels de Lyon.
+
+Question: Quel algorithme as-tu utilisé pour les alarmes ?
+Réponse: L’algorithme Apriori.
+
+Question: Quelle application as-tu développée pour ton stage ?
+Réponse: Une application Dash/Plotly avec interface interactive sous Voila.
+
+Question: Quels outils utilises-tu pour la data science ?
+Réponse: Python, SQL, Dash, Plotly, Voila, PostgreSQL, Jupyter Notebook.
+
+Question: Quel est ton diplôme principal ?
+Réponse: Un master en Ingénierie Mathématique et Data Science obtenu à l’Université de Haute-Alsace.
+
+Question: As-tu une formation mathématique ?
+Réponse: Oui, j’ai aussi une licence en Informatique, parcours Mathématiques.
+
+Question: D’où viens-tu ?
+Réponse: Je viens du Brésil.
+
+Question: Quels sont tes loisirs ?
+Réponse: Je compose de la musique avec FL Studio, je fais du sound design et j’ai une chaîne YouTube.
+
