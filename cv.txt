@@ -1,144 +1,83 @@
-Je suis consultant Data chez Abylsen depuis juin 2024 à Metz.  
-Je travaille en CDI et je suis en mission chez eMotors.  
-J’analyse les besoins métiers dans plusieurs domaines : achats, finances, production, qualité et supply chain.  
-Je collecte des données provenant d'automates industriels avec le protocole OPC UA.  
-Je développe des ETL en Python, SQL et Spark, notamment sur Databricks.  
-Je modélise les données avec une architecture en médaillon : Bronze, Silver et Gold.  
-J’automatise les workflows ETL avec des planifications batch sur des machines virtuelles ou via Databricks Jobs.  
-Je gère le versioning de mes projets sur Bitbucket.  
-Je crée et maintiens des tableaux de bord Power BI pour aider à la décision.  
-Je rédige aussi la documentation technique et des guides utilisateurs.  
-Mes compétences incluent Python, SQL, Spark, Power BI, Azure, AWS S3, Bitbucket, VSCode, SharePoint, OPC UA, PostgreSQL et Datalake ERP.
+Depuis juin 2024, je suis consultant Data chez Abylsen à Metz. J’occupe ce poste en CDI et je suis actuellement en mission chez eMotors, où je travaille au sein d’une équipe data transverse.
 
-Avant cela, j’ai été Data Engineer et Ingénieur Logiciel chez CGI entre janvier 2023 et juin 2024 à Montbéliard.  
-J’ai travaillé sur un projet Data Engineering pour produire des KPI QHSE.  
-J’ai développé des connecteurs vers de nouvelles sources de données.  
-J’ai nettoyé, enrichi et traité des données.  
-J’ai créé des indicateurs, des dashboards et tous les livrables nécessaires.  
-J’ai aussi rédigé la documentation fonctionnelle et technique.  
-Sur un autre projet, j’ai développé une application web pour l’analyse de données.  
-J’ai construit une interface interactive dans Jupyter Notebook pour intégrer du code nCodeDS dans PySpark.  
-J’ai développé un plugin PySpark pour automatiser l’extraction de données complexes.  
-Mes outils de travail comprenaient GCP (BigQuery, Cloud Function, Pub/Sub, Cloud Storage, Scheduler, Git Repository), Python, SQL, Shell, HTML, CSS, JavaScript, Git, API REST, CI/CD, Looker Studio, Dataiku DSS et Jupyter Notebook.
+Mon rôle principal consiste à analyser les besoins métiers dans plusieurs domaines : les achats, la finance, la production, la qualité et la supply chain. J'aime beaucoup cette diversité car elle me permet d’avoir une vue d’ensemble sur les enjeux de l’entreprise.
 
-J’ai fait un stage de Data Scientist chez Clemessy de mars 2022 à août 2022 à Mulhouse.  
-J’ai travaillé sur un projet appelé SITG qui portait sur les tunnels de Lyon.  
-J’ai recherché des règles d’association entre alarmes d’équipements.  
-J’ai développé une application Dash/Plotly pour présenter le projet et suivre son avancement.  
-J’ai traité les données d’alarme provenant d’une base PostgreSQL pour l’algorithme Apriori.  
-J’ai mis en place une stratégie de filtrage basée sur l’analyse de graphes et la décomposition par composants.  
-J’ai créé une interface interactive avec Voila pour des démonstrations en direct.  
-Mes compétences durant ce stage incluaient Python, SQL, Dash, Plotly, Voila et PostgreSQL.  
-J’ai aussi des connaissances en Linux, Docker et Jupyter Notebook.
+Au quotidien, je collecte des données issues d'automates industriels en utilisant le protocole OPC UA. Ensuite, je développe des pipelines ETL pour traiter ces données, en combinant Python, SQL et Spark. La majorité de mes traitements sont réalisés sur la plateforme Databricks, ce qui me permet de tirer parti d’une architecture en médaillon (Bronze, Silver, Gold) pour structurer les datasets.
 
-Je suis titulaire d’un master en Ingénierie Mathématique et Data Science obtenu à l’Université de Haute-Alsace entre 2019 et 2022.  
-Durant ce master, j’ai appris Python, SQL, Java, C++, R, JavaScript, Pandas, statistiques, modèles de régression, traitement du signal et de l’image.  
-J’ai aussi utilisé Jupyter Notebook pour mes projets.
+J’automatise les workflows grâce à des batchs planifiés, soit sur des machines virtuelles, soit via les Databricks Jobs. Pour assurer un bon suivi de mes projets, j’utilise Bitbucket pour le versioning et je rédige régulièrement de la documentation technique ainsi que des guides à destination des utilisateurs finaux.
 
-Avant cela, j’ai une licence en Informatique, parcours Mathématiques, obtenue à l’Université de Haute-Alsace entre 2017 et 2019.  
-J’ai eu la mention assez bien.
+Je conçois également des tableaux de bord interactifs avec Power BI. Ces dashboards sont utilisés par les équipes métier pour faciliter la prise de décision et suivre l’évolution de leurs indicateurs clés.
 
-J’ai suivi une classe préparatoire aux grandes écoles, en MPSI puis MP*, au lycée Albert Schweitzer à Mulhouse, de 2015 à 2017.
+Avant de rejoindre Abylsen, j’ai travaillé chez CGI à Montbéliard de janvier 2023 à juin 2024, en tant que Data Engineer et Ingénieur Logiciel. Ce fut une expérience très formatrice. J’ai contribué à un projet de Data Engineering dédié à la production d’indicateurs QHSE. Mon rôle incluait la connexion à de nouvelles sources de données, la mise en qualité, l’enrichissement, la création de KPI, la conception de dashboards, et la livraison complète des livrables data.
 
-Dans mes loisirs, je compose de la musique assistée par ordinateur avec le logiciel FL Studio.  
-Je fais aussi du sound design et du mixage.  
-J’ai une chaîne YouTube où je poste mes compositions depuis cinq ans.
+Par ailleurs, j’ai également participé au développement d’une application web d’analyse de données. J’ai créé une interface interactive dans Jupyter Notebook pour intégrer du code issu de la bibliothèque nCodeDS dans un environnement PySpark. Dans ce contexte, j’ai aussi développé un plugin PySpark qui permettait d’automatiser l’extraction de données complexes.
 
-Michel, c’est moi.  
-Je viens du Brésil.  
-J’adore danser la samba.  
-Je voyage de ville en ville pour vendre des fenêtres.
+Ce projet m’a permis de travailler avec l’écosystème Google Cloud Platform : BigQuery, Cloud Function, Pub/Sub, Cloud Storage, Scheduler, et Git Repository. J’ai également utilisé Python, SQL, Shell, HTML, CSS, JavaScript, Git, des API REST, CI/CD, Looker Studio et Dataiku DSS. Jupyter Notebook a été mon environnement principal de prototypage.
 
-Question: Où travailles-tu actuellement ?
-Réponse: Je suis consultant Data chez Abylsen depuis juin 2024.
+En 2022, j’ai réalisé mon stage de fin d’études chez Clemessy, à Mulhouse, dans le cadre d’un projet appelé SITG. L’objectif était d’analyser les alarmes techniques issues des tunnels de Lyon. J’ai développé une stratégie basée sur les règles d’association (via l’algorithme Apriori) et la décomposition en graphes pour filtrer les alertes redondantes.
 
-Question: Dans quelle ville travailles-tu ?
-Réponse: Je travaille à Metz.
+J’ai aussi créé une application Dash/Plotly pour présenter l’avancement du projet et démontrer les résultats en direct, via une interface interactive développée avec Voila. J’ai utilisé PostgreSQL pour exploiter la base d’alarme, et j’ai beaucoup appris sur la structuration de données temporelles complexes. Cette expérience m’a permis de consolider mes compétences en Python, SQL, Dash, Plotly et Voila.
 
-Question: Quel est ton type de contrat ?
-Réponse: Je suis en CDI.
+Je suis titulaire d’un master en Ingénierie Mathématique et Data Science obtenu à l’Université de Haute-Alsace entre 2019 et 2022. Ce cursus m’a permis d’apprendre Python, SQL, Java, C++, R, JavaScript et les fondamentaux en statistiques, modèles de régression, traitement du signal et de l’image. La majorité de mes projets étaient réalisés sous Jupyter Notebook.
 
-Question: Chez quel client es-tu en mission ?
-Réponse: Je suis en mission chez eMotors.
+Avant cela, j’ai obtenu une licence en Informatique, parcours Mathématiques, également à l’Université de Haute-Alsace, entre 2017 et 2019. J’ai validé cette formation avec la mention assez bien.
 
-Question: Quels domaines métiers analyses-tu ?
-Réponse: J’analyse les besoins métiers en achats, finances, production, qualité et supply chain.
+Mon parcours scolaire a débuté par une classe préparatoire aux grandes écoles : MPSI puis MP*, au lycée Albert Schweitzer de Mulhouse, entre 2015 et 2017.
 
-Question: Comment collectes-tu les données industrielles ?
-Réponse: Je collecte des données d'automates via le protocole OPC UA.
+Côté personnel, je suis passionné de musique assistée par ordinateur. Je compose depuis plusieurs années sur FL Studio, je fais aussi du sound design et du mixage. J’ai une chaîne YouTube où je partage mes compositions depuis maintenant cinq ans.
 
-Question: Quels langages utilises-tu pour les ETL ?
-Réponse: J’utilise Python, SQL et Spark pour développer les ETL.
+Enfin, pour ajouter une touche plus personnelle : je m'appelle Michel, je viens du Brésil et j’adore danser la samba. J’ai même voyagé de ville en ville pour vendre des fenêtres, une expérience qui m’a beaucoup appris sur l’adaptation et le contact humain.
 
-Question: Sur quelle plateforme travailles-tu avec Spark ?
-Réponse: Je travaille principalement sur Databricks.
+Depuis juin 2024, j’exerce en tant que consultant en données chez Abylsen, basé à Metz, où je suis en CDI. Je suis actuellement affecté chez eMotors au sein d’une équipe data transverse.
 
-Question: Quelle architecture utilises-tu pour les données ?
-Réponse: Je modélise les données selon une architecture en médaillon : Bronze, Silver, Gold.
+Mon travail consiste à identifier et analyser les besoins métiers dans des domaines variés tels que les achats, la production, la finance, la qualité et la logistique. Cette variété me permet d’avoir une compréhension globale des processus de l’entreprise.
 
-Question: Comment automatises-tu les workflows ?
-Réponse: J’automatise les workflows ETL avec des batchs sur machines virtuelles ou via Databricks Jobs.
+Je suis en charge de la récupération de données industrielles à partir d’automates via le protocole OPC UA. Je développe ensuite des pipelines ETL en Python, SQL et Spark, le tout hébergé sur Databricks, où je mets en place une architecture en médaillon (Bronze, Silver, Gold) pour organiser les jeux de données.
 
-Question: Quel outil utilises-tu pour le versioning ?
-Réponse: J’utilise Bitbucket pour le versioning des projets.
+J’automatise les traitements grâce à des jobs planifiés, que ce soit via machines virtuelles ou Databricks Jobs. J’utilise Bitbucket pour la gestion du code et je produis une documentation technique complète ainsi que des guides utilisateurs.
 
-Question: Que fais-tu avec Power BI ?
-Réponse: Je crée et maintiens des tableaux de bord Power BI.
+Je développe également des dashboards interactifs avec Power BI, qui permettent aux métiers de piloter leurs KPIs et de prendre des décisions basées sur les données.
+En poste chez Abylsen depuis juin 2024, j’interviens comme consultant data chez eMotors à Metz. Intégré dans une équipe pluridisciplinaire dédiée à la donnée, je couvre un spectre fonctionnel large : finance, achats, production, qualité et supply chain.
 
-Question: À quoi servent tes dashboards ?
-Réponse: Ils aident à la prise de décision.
+J’assure la collecte de données issues des automates industriels via OPC UA, que je transforme grâce à des pipelines ETL complexes construits avec Spark, Python et SQL sur la plateforme Databricks.
 
-Question: Est-ce que tu rédiges de la documentation ?
-Réponse: Oui, je rédige la documentation technique et des guides utilisateurs.
+Ma démarche s’appuie sur une stratégie de traitement en médaillon, divisant les données en Bronze, Silver et Gold selon leur niveau de raffinement.
 
-Question: Quelles sont tes compétences techniques principales ?
-Réponse: Python, SQL, Spark, Power BI, Azure, AWS S3, Bitbucket, SharePoint, OPC UA, PostgreSQL, Datalake ERP.
+Je mets en place des automatisations via des scripts exécutés sur VMs ou via les Jobs natifs Databricks. L’intégration continue est gérée avec Bitbucket, et je fournis systématiquement une documentation technique et métier à jour.
 
-Question: Où as-tu travaillé avant Abylsen ?
-Réponse: J’ai travaillé chez CGI entre janvier 2023 et juin 2024.
+Je crée des rapports dynamiques sous Power BI, régulièrement utilisés par les équipes opérationnelles pour suivre les indicateurs clés et adapter leur stratégie.
+Depuis juin 2024, je travaille en CDI chez Abylsen à Metz en tant que consultant data, en mission chez eMotors. Je collabore avec une équipe transverse sur plusieurs domaines clés : achats, finance, production, qualité et supply chain.
 
-Question: Quels rôles avais-tu chez CGI ?
-Réponse: J’étais Data Engineer et Ingénieur Logiciel.
+Je collecte des données à partir d’automates industriels grâce au protocole OPC UA. Ensuite, je construis et optimise des pipelines ETL avec Python, SQL et Spark, hébergés sur Databricks, en appliquant une architecture en médaillon (Bronze, Silver, Gold).
 
-Question: Où étais-tu basé chez CGI ?
-Réponse: Je travaillais à Montbéliard.
+Pour automatiser les traitements, j’utilise des batchs programmés sur des machines virtuelles ou via les Databricks Jobs. Je gère le versioning sur Bitbucket et rédige une documentation technique ainsi que des guides utilisateurs.
 
-Question: Quel était ton projet principal chez CGI ?
-Réponse: Un projet Data Engineering pour produire des KPI QHSE.
+Je conçois des tableaux de bord interactifs avec Power BI pour permettre aux équipes métier de suivre leurs KPIs et prendre des décisions éclairées.
+Avant de rejoindre Abylsen, j’ai travaillé chez CGI à Montbéliard de janvier 2023 à juin 2024, en tant que Data Engineer et Ingénieur Logiciel. Ce fut une expérience très formatrice.
 
-Question: Qu’as-tu développé pendant ce projet ?
-Réponse: J’ai développé des connecteurs, nettoyé et enrichi des données, créé des indicateurs et des dashboards.
+J’ai contribué à un projet de Data Engineering dédié à la production d’indicateurs QHSE. Mon rôle incluait la connexion à de nouvelles sources de données, la mise en qualité, l’enrichissement, la création de KPI, la conception de dashboards, et la livraison complète des livrables data.
 
-Question: As-tu travaillé sur une application web chez CGI ?
-Réponse: Oui, j’ai développé une application d’analyse de données avec Jupyter Notebook et PySpark.
+J’ai également participé au développement d’une application web d’analyse de données, créant une interface interactive dans Jupyter Notebook pour intégrer du code issu de la bibliothèque nCodeDS dans un environnement PySpark.
 
-Question: As-tu utilisé Google Cloud Platform ?
-Réponse: Oui, avec BigQuery, Cloud Function, Pub/Sub, Cloud Storage et Scheduler.
+Dans ce cadre, j’ai développé un plugin PySpark qui permettait d’automatiser l’extraction de données complexes.
+Ce projet m’a permis de travailler avec l’écosystème Google Cloud Platform : BigQuery, Cloud Function, Pub/Sub, Cloud Storage, Scheduler, et Git Repository.
 
-Question: Où as-tu fait ton stage de fin d’études ?
-Réponse: Chez Clemessy, à Mulhouse, en 2022.
+J’ai utilisé Python, SQL, Shell, HTML, CSS, JavaScript, Git, des API REST, CI/CD, Looker Studio et Dataiku DSS. Jupyter Notebook a été mon environnement principal de prototypage.
 
-Question: Quel était le projet de ton stage ?
-Réponse: Un projet appelé SITG sur les tunnels de Lyon.
+En 2022, j’ai réalisé mon stage de fin d’études chez Clemessy, à Mulhouse, dans le cadre d’un projet appelé SITG. L’objectif était d’analyser les alarmes techniques issues des tunnels de Lyon.
 
-Question: Quel algorithme as-tu utilisé pour les alarmes ?
-Réponse: L’algorithme Apriori.
+J’ai développé une stratégie basée sur les règles d’association (via l’algorithme Apriori) et la décomposition en graphes pour filtrer les alertes redondantes.
 
-Question: Quelle application as-tu développée pour ton stage ?
-Réponse: Une application Dash/Plotly avec interface interactive sous Voila.
-
-Question: Quels outils utilises-tu pour la data science ?
-Réponse: Python, SQL, Dash, Plotly, Voila, PostgreSQL, Jupyter Notebook.
-
-Question: Quel est ton diplôme principal ?
-Réponse: Un master en Ingénierie Mathématique et Data Science obtenu à l’Université de Haute-Alsace.
-
-Question: As-tu une formation mathématique ?
-Réponse: Oui, j’ai aussi une licence en Informatique, parcours Mathématiques.
-
-Question: D’où viens-tu ?
-Réponse: Je viens du Brésil.
-
-Question: Quels sont tes loisirs ?
-Réponse: Je compose de la musique avec FL Studio, je fais du sound design et j’ai une chaîne YouTube.
-
+J’ai aussi créé une application Dash/Plotly pour présenter l’avancement du projet et démontrer les résultats en direct, via une interface interactive développée avec Voila.
+J’ai utilisé PostgreSQL pour exploiter la base d’alarme, et j’ai beaucoup appris sur la structuration de données temporelles complexes.
+Cette expérience m’a permis de consolider mes compétences en Python, SQL, Dash, Plotly et Voila.
+Je suis titulaire d’un master en Ingénierie Mathématique et Data Science obtenu à l’Université de Haute-Alsace entre 2019 et 2022.
+Ce cursus m’a permis d’apprendre Python, SQL, Java, C++, R, JavaScript et les fondamentaux en statistiques, modèles de régression, traitement du signal et de l’image.
+La majorité de mes projets étaient réalisés sous Jupyter Notebook.
+Avant cela, j’ai obtenu une licence en Informatique, parcours Mathématiques, également à l’Université de Haute-Alsace, entre 2017 et 2019.
+J’ai validé cette formation avec la mention assez bien.
+Mon parcours scolaire a débuté par une classe préparatoire aux grandes écoles : MPSI puis MP*, au lycée Albert Schweitzer de Mulhouse, entre 2015 et 2017.
+Côté personnel, je suis passionné de musique assistée par ordinateur. Je compose depuis plusieurs années sur FL Studio, je fais aussi du sound design et du mixage.
+J’ai une chaîne YouTube où je partage mes compositions depuis maintenant cinq ans.
+Enfin, pour ajouter une touche plus personnelle : je m'appelle Michel, je viens du Brésil et j’adore danser la samba.
+J’ai même voyagé de ville en ville pour vendre des fenêtres, une expérience qui m’a beaucoup appris sur l’adaptation et le contact humain.

@@ -1,21 +1,25 @@
 from flask import Flask, render_template, request, jsonify
 import torch
 from minigpt import GPT, Tokenizer
-
 import json
 
 app = Flask(__name__)
 
-# Recharger tokenizer
+# Recharger tokenizer depuis un fichier JSON qui contient vocab, stoi, itos
 with open("minigpt_tokenizer.json", "r", encoding="utf-8") as f:
-    stoi = json.load(f)
-    itos = {i: ch for ch, i in stoi.items()}
+    tokenizer_data = json.load(f)
 
-tokenizer = Tokenizer("")
+# tokenizer_data est un dict avec 'vocab', 'stoi' et 'itos'
+stoi = tokenizer_data['stoi']
+itos = {int(k): v for k, v in tokenizer_data['itos'].items()}
+vocab = tokenizer_data['vocab']
+
+# Recréer le tokenizer
+tokenizer = Tokenizer("")  # texte vide car on va définir vocab manuellement
 tokenizer.stoi = stoi
 tokenizer.itos = itos
-tokenizer.vocab = list(stoi.keys())
-tokenizer.vocab_size = len(tokenizer.vocab)
+tokenizer.vocab = vocab
+tokenizer.vocab_size = len(vocab)
 
 # Charger modèle
 device = 'cuda' if torch.cuda.is_available() else 'cpu'

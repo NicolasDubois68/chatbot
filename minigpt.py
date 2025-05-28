@@ -1,10 +1,9 @@
-# minigpt.py
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import math
 
-# Hyperparameters
+# Hyperparamètres
 block_size = 128
 batch_size = 64
 max_iters = 2000
@@ -17,21 +16,24 @@ n_head = 4
 n_layer = 4
 dropout = 0.1
 
-# Tokenizer utils (character-level)
+# Tokenizer mot par mot
 class Tokenizer:
     def __init__(self, text):
-        self.vocab = sorted(list(set(text)))
+        words = text.lower().split()
+        unique_words = sorted(set(words + ['<UNK>', ' ']))
+        self.vocab = unique_words
         self.vocab_size = len(self.vocab)
-        self.stoi = {ch: i for i, ch in enumerate(self.vocab)}
-        self.itos = {i: ch for ch, i in self.stoi.items()}
+        self.stoi = {word: i for i, word in enumerate(self.vocab)}
+        self.itos = {i: word for word, i in self.stoi.items()}
 
     def encode(self, s):
-        return [self.stoi[c] for c in s]
+        s = s.lower().split()
+        return [self.stoi.get(word, self.stoi[' ']) for word in s]
 
     def decode(self, l):
-        return ''.join([self.itos[i] for i in l])
+        return ' '.join([self.itos.get(i, '?') for i in l])
 
-# GPT Model
+# Head d'attention
 class Head(nn.Module):
     def __init__(self, head_size):
         super().__init__()
@@ -53,6 +55,7 @@ class Head(nn.Module):
         out = wei @ v
         return out
 
+# Attention multi-têtes
 class MultiHeadAttention(nn.Module):
     def __init__(self, num_heads, head_size):
         super().__init__()
@@ -65,6 +68,7 @@ class MultiHeadAttention(nn.Module):
         out = self.dropout(self.proj(out))
         return out
 
+# Feed Forward
 class FeedForward(nn.Module):
     def __init__(self, n_embd):
         super().__init__()
@@ -78,6 +82,7 @@ class FeedForward(nn.Module):
     def forward(self, x):
         return self.net(x)
 
+# Bloc Transformer
 class Block(nn.Module):
     def __init__(self, n_embd, n_head):
         super().__init__()
@@ -92,6 +97,7 @@ class Block(nn.Module):
         x = x + self.ff(self.ln2(x))
         return x
 
+# Modèle GPT
 class GPT(nn.Module):
     def __init__(self, vocab_size):
         super().__init__()
@@ -109,6 +115,7 @@ class GPT(nn.Module):
         x = self.blocks(x)
         x = self.ln_f(x)
         logits = self.lm_head(x)
+
         if targets is None:
             loss = None
         else:
@@ -128,5 +135,5 @@ class GPT(nn.Module):
             idx = torch.cat((idx, idx_next), dim=1)
         return idx
 
-# Utilitaires pour l'import
-__all__ = ["GPT", "Tokenizer"]
+# Exports
+__all__ = ["GPT", "Tokenizer", "block_size", "device"]
